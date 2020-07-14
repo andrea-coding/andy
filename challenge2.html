@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 2</title>
+    <script>
+      // //
+      // function genCharArray(charA, charZ) {
+      //   var a = [],
+      //     i = charA.charCodeAt(0),
+      //     j = charZ.charCodeAt(0);
+      //   for (; i <= j; ++i) {
+      //     a.push(String.fromCharCode(i));
+      //   }
+      //   return a;
+      // }
+    
+
+      
+      //   function isPangram(phrase) {
+      //     let phraseArray=phrase.replace(/\W+/g,'').toLowerCase().split('').sort().filter((v,i,arr) =>{
+      //       return arr.indexOf(v) === i
+      //     });
+      //     let alphabetList = genCharArray('a','z');
+      //     let alphaArray = [];
+
+      //     for(let i=0;i<phraseArray.length;i++){
+      //       for(let j=0;j<alphabetList.length;j++){
+      //         if (alphabetList[j] === phraseArray[i]){
+      //           alphaArray.push(alphabetList[j]);
+      //         }
+      //       }
+      //     }
+          
+      //     return alphaArray.length === 26 ? 'true' : 'false'
+      //   }
+      //  let tryat = 'abcdefghijklmnopqrstuvwxyz'
+      //   console.log(ispangram(tryat));
+
+
+    //     let first=['a',1,'a',2,3,4,5,6,7,8,'f'];
+    //     let second =['a',11,12,0,14,'f',15];
+    //     let arr1=[];
+         
+    //     for(let i=0;i<first.length;i++){
+    //       for(let j=0;j<second.length;j++){
+    //         if (first[i] == second[j]){
+    //           arr1.push(second[j]);
+    //         }
+    //         // console.log(`${first[i]}, ${second[j]}`)
+    //       }
+          
+    //     }
+    //     console.log(arr1);
+
+    // //  ?
+    // //   console.log(isTextPangram(tryat))
+
+    function longest(sentence){
+  var words = sentence.split(' '),
+  length = [];
+
+  for(let word of words) length.push(word.length);
+  length.sort();
+  const longest = length.pop();
+  for(let word of words) if (longest == word.length) return console.log(word.toUpperCase());
+
+}
+const word = prompt('web Development Tutorial is the best in the world of computer')
+
+longest(word)
+    </script>
+  </head>
+
+  <body>
+    <h2>Panagram</h2>
+    <p>The quick brown fox jumps over the lazy dog.</p>
+  </body>
+</html>

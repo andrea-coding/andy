@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fisrt pratique </title>
+    <style>
+        body{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            background-color: cornsilk;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            margin-top: 5rem;
+            padding: 2rem 2rem;
+            color: black;
+             background-color:chartreuse;
+        }
+        label{
+            margin: 0.5rem 0.75rem;
+            font-size: 1rem auto;
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            margin: 3rem auto;
+            border-radius: 0.75rem;
+            padding: 0.75rem 1rem;
+            width: 25%;
+            background-color:darkmagenta;
+        }
+        button:hover{
+            background-color: darkkhaki;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+            const  myObject = {
+            nom:"tchokos",
+            prenom: "andy",
+            fullName: function () {
+                return this.nom +" "+ this.prenom
+            }
+            };
+            myObject.age = function (x){
+                return `i am ${x} years old` 
+            }
+            
+            console.log(myObject.age(19));  
+    </script>
+</head>
+<body>
+    <div>
+        <form action="">
+            <h1> andy formulaire </h1>
+            <label for="">Student Name </label>
+            <input type="text" placeholder="enter your student Name">
+            <label for="">Date of Birth</label>
+            <input type="date">
+            <label for="">Gender</label>
+            <input type="radio" name="male" id="">male
+            <input type="radio" name="femele" id="">female
+
+            <label for="">Username</label>
+            <input type="text" placeholder="enter your username">
+            <label for="">Passeword</label>
+            <input type="password" name="" id="">
+            <label for="">Programming skills</label>
+            <select name="" id="">
+                <option value="">java</option>
+                <option value="">PHP</option>
+                <option value="">HTML</option>
+                <option value="">c++</option>
+            </select>
+            <label for="">Student Education Level</label>
+            <select name="" id="">
+            <option value="">junior</option>
+            <option value="">Hight School</option>
+            <option value="">University</option>
+            </select>
+            <button type="button" onclick="alert(' Hello prince');">click Me!</button>
+        </form>
+    </div> 
+
+    
+    <script>
+
+        var phrase = /("andrinne aime andy")/
+        show(phrase.test("andy"))
+
+        var myBook = [
+            {
+            name:"prince",
+            grade: 1,
+            passed: true
+            },
+            {name:"Andrienne",
+            grade:2,
+            passed:true
+            },
+            {name: "amir",
+            grade: 3,
+            pased:true
+            }   
+        ];
+    myBook.forEach((book) => {
+
+  console.log(book.name);
+  console.log(book.grade);
+  console.log(book.passed);
+});
+    </script>
+</body>
+</html>

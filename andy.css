@@ -1,0 +1,50 @@
+header {
+    border: 1px solid black;
+    background-color: aqua;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+
+}
+.footer {
+    border: 1px solid black;
+    background-color: rgb(41, 68, 68);
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin-top: 450px;
+}
+.container {
+    box-sizing: border-box;
+    display: block;
+    
+}
+.container section {
+    background-color: crimson;
+    float: right;
+    height: 200px;
+    width: 49%;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+.container  aside {
+    background-color: darkgreen;
+    float: right;
+    height: 200px;
+    width: 49%;
+    text-align: center;
+
+}
+.container article{
+    width: 49%;
+    height: 410px;
+    float: left;
+    background-color: chartreuse;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
